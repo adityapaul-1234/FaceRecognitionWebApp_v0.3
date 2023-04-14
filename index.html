@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>Face Recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  </head>
+
+  <body>
+  <div class="container">
+    <h3>Face Recognition Web App</h3>
+    <hr><br>
+
+    <div id="list">
+      <p style="font-size: 22px; margin-top: 8%;">Model is trained to identify the following people: </p>
+      <center>
+      <b style="font-size: 20px;" class="list_of_objects">
+        <br>
+        Me!
+        <hr>
+        Father
+        <hr>
+        Mother
+      </b>
+      <br>
+      </center>
+    </div>
+      
+    <div style="float: right; background-color: lightgray; width: 67.5%; padding-left: 20px; padding-bottom: 20px; padding-right: 20px; border-radius: 30px; height: 365px;  border: 3px solid;">
+      <label class="label" style="float: right; margin-top: 30px; padding-bottom: 10px; padding-right: 67%; margin-bottom: 0%;">Webcam View:</label>
+      <div id="camera" style="float: left; margin-left: 0px;"></div>
+
+      <label class="label" style="float: right; margin-top: -40px; padding-top: 10px; padding-bottom: 10px; padding-right: 14%;">Image Clicked:</label>
+      <div id="result" style="float: right; margin-top: -5px;"></div>
+    </div>
+
+    <div class="button_div">
+      <button onclick="take_snapshot();" class="btn btn-primary commands" style="margin-left: 16px; margin-bottom: 10px; margin-top: 1px;">Capture Image</button>
+      <br>
+      <button onclick="check();" class="btn btn-success commands" style="margin-left: 16px;">Identify Image</button>
+      <br>
+    </div>
+
+    <div class="info_div">
+      <p style="font-size: 22px; margin-top: 7.5px;">Person: <span id="result_object_name"></span></p>
+      <p style="font-size: 22px;">Accuracy: <span id="result_object_accuracy"></span></p>
+    </div>
+
+  <br>  
+  <a href="https://drive.google.com/file/d/1Z3XGUD5ifulfoRpLDKrnEnNI6tYTjomw/view?usp=sharing" target="_blank"style="color: red; font-size: 20px; font-weight: bold;">Click Here to Access Teachable Machine Face Recognition Project File</a>
+  </div>
+  <script src="main.js"></script>
+  </body>
+</html>

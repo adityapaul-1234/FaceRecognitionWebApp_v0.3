@@ -1,0 +1,95 @@
+body{
+    background-color:bisque;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+}
+
+h3{
+    font-size: 40px;
+    text-align: center;
+}
+
+.heading{
+    width: 100%; 
+    background-color: transparent;
+    border: none;
+    font-size: 35px;
+}
+
+p{
+    font-size: 25px;
+}
+
+.list_of_objects{
+    font-size: 20px;
+}
+
+.label{
+    font-size: 20px;
+    color: black;
+}
+
+.commands{
+    font-size: 18px;
+    width: 130px;
+    text-align: center;
+}
+
+#camera, #result{
+    border: 1px dashed black;
+    width: 355px;
+    height: 265px;
+}
+
+#list{
+    background-color: lightgray;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    z-index: 1;
+    float: left;
+    width: 30%;
+    height: 365px;
+    padding: 20px;
+    border: 3px solid black;
+}
+
+hr{
+    width: 80%;
+    color: white;
+}
+
+.button_div{
+    background-color: lightgrey;
+    border: 3px solid black;
+    border-radius:30px;
+    margin-top: 425px;
+    height: 125px;
+    width: 17.5%;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    -ms-border-radius:30px;
+    -o-border-radius:30px;
+    padding: 15px;
+    margin-left: 25%;
+
+}
+
+.info_div{
+    background-color: lightgrey;
+    border: 3px solid black;
+    border-radius:30px;
+    height: 125px;
+    width: 17.5%;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    -ms-border-radius:30px;
+    -o-border-radius:30px;
+    padding: 15px;
+    float: right;
+    margin-top: -125px;
+    text-align: center;
+    margin-right: 25%;
+}
